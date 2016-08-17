@@ -5,7 +5,7 @@ import os
 import time
 
 curr_dir = os.path.dirname(os.path.realpath(__file__))
-curr_wall = curr_dir+"/"+"background.png"
+curr_wall = curr_dir+"/"+"original.jpg"
 notes = curr_dir+"/"+"notes.txt"
 
 #--

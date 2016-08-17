@@ -1,8 +1,4 @@
 ***** Cursor movement *****
-h - move cursor left
-j - move cursor down
-k - move cursor up
-l - move cursor right
     w - jump forwards to the start of a word
 W - jump forwards to the start of a word (words can contain punctuation)
     e - jump forwards to the end of a word
@@ -54,6 +50,24 @@ convert selected text to lowercase - u
 invert case of selected text - ~                                     
 :\%s/foo/bar/g - Find and replace (all lines)
 :s/foo/bar/g - Find and replace (current line onlye) 
+
+4. Operating on the Visual area             *visual-operators*
+aw  a word (with white space)           
+iw  inner word                  
+aW  a WORD (with white space)           
+iW  inner WORD                  
+as  a sentence (with white space)           
+is  inner sentence                  
+ap  a paragraph (with white space)          
+ip  inner paragraph                 
+ab  a () block (with parenthesis)           
+ib  inner () block                  
+aB  a {} block (with braces)            
+iB  inner {} block                  
+a<  a <> block (with <>)                
+i<  inner <> block                  
+a[  a [] block (with [])                
+i[  inner [] block     
 
 ***** Terminal navigation *****
 Ctrl + A - go to the beginning of line
