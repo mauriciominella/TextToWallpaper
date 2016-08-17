@@ -1,4 +1,4 @@
-Cursor movement
+***** Cursor movement *****
 h - move cursor left
 j - move cursor down
 k - move cursor up
@@ -26,21 +26,40 @@ Ctrl + d - move forward 1/2 a screen
 Ctrl + u - move back 1/2 a screen
 tip prefix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines.
 
-Most used commands
-select blocks (columns) - CTRL  + v
+***** Most used commands *****
+ciw - change inner word
+yss[char] - surround entire line
+ds[char] - remove surround char
+ysiw[char] - surround inner word
+cs[char1char2]- replace surround char
+CTRL + v - select blocks (columns) o
+D - delete until the end of the line
+di[char] - delete everything between the char
+dt[char] - delete everything until the char 
 indent selected text - >                                     
 unindent selected text - <                                     
-list buffers                             :ls                                   
-open buffer                              :bN (N = buffer number)               
-print                                    :hardcopy                             
-open a file                              :e /path/to/file.txt                  
-                                         :e C:\Path\To\File.txt                
-sort selected rows                       :sort                                 
-search for word under cursor             *                                     
-open file under cursor                   gf                                    
+list buffers - :ls                                   
+open buffer - :bN (N = buffer number)               
+print - :hardcopy                             
+open a file - :e /path/to/file.txt                  
+            - :e C:\Path\To\File.txt                
+sort selected rows - :sort                                 
+search for word under cursor - *                                     
+open file under cursor - gf                                    
 (absolute path or relative)                                                  
-format selected code                     =                                     
-select contents of entire file           ggVG                                  
-convert selected text to uppercase       U                                     
-convert selected text to lowercase       u                                     
-invert case of selected text             ~                                     
+format selected code - =                                     
+select contents of entire file - ggVG                                  
+convert selected text to uppercase - U                                     
+convert selected text to lowercase - u                                     
+invert case of selected text - ~                                     
+:\%s/foo/bar/g - Find and replace (all lines)
+:s/foo/bar/g - Find and replace (current line onlye) 
+
+***** Terminal navigation *****
+Ctrl + A - go to the beginning of line
+Ctrl + E - go to the end of line
+Alt + B - skip one word backward
+Alt + F - skip one word forward
+Ctrl + U - delete to the beginning of line
+Ctrl + K - delete to the end of line
+Alt + D - delete to the end of word
